@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    /* Reset default margin and padding */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f2f5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;
+    }
+
+    /* Header styling */
+    h1 {
+        color: #1877f2;
+        font-size: 48px;
+        margin-bottom: 10px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    h2 {
+        font-size: 24px;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 16px;
+        color: #606770;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    /* Form container */
+    div {
+        background-color: white;
+        padding: 20px 30px;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 15px;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="date"] {
+        width: 100%;
+        padding: 10px;
+        margin: 6px 0;
+        border: 1px solid #ccd0d5;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+    /* Gender section */
+    ._58mt {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 8px 0;
+    }
+
+    ._58mt input {
+        margin-left: auto;
+    }
+
+    label._58mt {
+        background-color: #f5f6f7;
+        padding: 8px;
+        border-radius: 5px;
+        border: 1px solid #ccd0d5;
+        cursor: pointer;
+        justify-content: space-between;
+    }
+
+    /* Button styling */
+    button {
+        width: 100%;
+        padding: 12px;
+        background-color: #42b72a;
+        border: none;
+        border-radius: 6px;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    button a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    button:hover {
+        background-color: #36a420;
+    }
+
+    /* Footer link */
+    a {
+        display: block;
+        text-align: center;
+        margin-top: 15px;
+        color: #1877f2;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* Terms text */
+    p {
+        font-size: 12px;
+        color: #606770;
+        margin-top: 10px;
+        line-height: 1.5;
+    }
+
+</style>
+<body>
+    <h1>Facebook</h1>
+    <div>
+       
+       <h2>Create new account</h2>
+       <h3>It's quick and easy.</h3>
+   
+        <input type="text" placeholder="First name" name="First name"><br>
+        <input type="text" placeholder="Surname" name="Surname"><br>
+        <label >
+            Date of birth
+            <input type="date" name="Date of birth" id="dob" aria-describedby="date-error-message">
+        </label>
+        
+        <div>Gender</div>
+        <label class="_58mt">
+            Female
+            <input type="radio" class="_8esa" id="sex" name="sex" value="1" aria-describedby="gender-error-message"> 
+        </label>
+        <label class="_58mt">
+            male
+            <input type="radio" class="_8esa" id="sex" name="sex" value="1" aria-describedby="gender-error-message"> 
+        </label>
+        <label class="_58mt">
+            Custom
+            <input type="radio" class="_8esa" id="sex" name="sex" value="1" aria-describedby="gender-error-message"> 
+        </label>
+    
+        <input type="text" placeholder="Mobile number or email address" name="Mobile number or email address"><br>
+        <input type="password" placeholder="New password" name="New password"><br>
+    
+        <p>People who use our service may have uploaded your contact information to Facebook. Learn more.<br>
+
+        By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies Policy. You may receive SMS notifications from us and can opt out at any time.</p>
+    
+        <button><a href="">Signup</a></button>
+    
+        <a href="login.html">Already you have an account?</a>
+    </div>
+    
+</body>
+</html>
